@@ -1,0 +1,89 @@
+/* CSS Color Variables */
+
+:root {
+  --orange: #ef5839;
+  --white: #fff;
+  --purple: #2e354f;
+  --yellow: #d4b44c;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--purple);
+}
+
+/* Typography */
+
+h1,
+h2,
+strong {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h2,
+a {
+  color: var(--orange);
+}
+
+a:hover,
+a:focus {
+  color: var(--yellow);
+}
+
+/* Buttons */
+
+.btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.btn-accent {
+  background-color: var(--orange);
+  color: inherit;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--yellow);
+  color: var(--purple);
+}
+
+.btn-light {
+  background-color: var(--white);
+  color: var(--purple);
+}
+
+/* Layout */
+
+header {
+  padding: 45px 0;
+}
+
+section {
+  padding: 25px;
+}
+
+.section-one {
+  background-color: var(--white);
+  color: var(--purple);
+}
+
+.container {
+  width: 620px;
+  margin: 0 auto;
+}
