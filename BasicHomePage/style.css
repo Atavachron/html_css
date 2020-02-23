@@ -71,6 +71,10 @@ a:focus {
 
 /* Layout */
 
+img {
+  width: 100%;
+}
+
 header {
   padding: 45px 0;
 }
@@ -85,6 +89,7 @@ section {
 }
 
 .container {
-  width: 620px;
+  width: 90%;
+  max-width: 620px;
   margin: 0 auto;
 }
