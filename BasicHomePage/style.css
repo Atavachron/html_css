@@ -1,5 +1,9 @@
 /* CSS Color Variables */
 
+html {
+  font-size: 18px;
+}
+
 :root {
   --orange: #ef5839;
   --white: #fff;
@@ -10,7 +14,6 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
   color: var(--white);
   background-color: var(--purple);
 }
@@ -24,12 +27,12 @@ strong {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
   margin: 0;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-top: 0;
 }
 
