@@ -1,7 +1,7 @@
 /* CSS Color Variables */
 
 html {
-  font-size: 18px;
+  font-size: 100%;
 }
 
 :root {
@@ -51,7 +51,7 @@ a:focus {
 .btn {
   margin-top: 10px;
   display: inline-block;
-  padding: 10px 25px;
+  padding: 0.6em 1.5em;
   text-decoration: none;
   border-radius: 3px;
 }
@@ -79,11 +79,11 @@ img {
 }
 
 header {
-  padding: 45px 0;
+  padding: 2.8em 0;
 }
 
 section {
-  padding: 25px;
+  padding: 1.5em;
 }
 
 .section-one {
