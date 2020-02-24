@@ -1,0 +1,79 @@
+/* Color CSS variables */
+
+:root {
+  --whitish: #f8f8f8;
+  --grey: #707070;
+  --lightblue: #1792d2;
+  --darkblue: #143774;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background-color: var(--whitish);
+  padding: 2em 0;
+}
+
+/* Typography */
+
+h1 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0;
+  color: var(--darkblue);
+}
+
+.subtitle {
+  font-weight: 700;
+  color: var(--lightblue);
+  font-size: 0.75rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--grey);
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--lightblue);
+}
+
+.current-page {
+  border-bottom: 2px solid var(--grey);
+}
+
+.current-page:hover,
+.curent-page:focus {
+  color: var(--grey);
+}
+
+/* Layout */
+
+header {
+  display: flex;
+  flex-direction: column;
+}
