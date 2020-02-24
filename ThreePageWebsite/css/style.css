@@ -12,12 +12,6 @@ body {
   margin: 0;
 }
 
-header {
-  text-align: center;
-  background-color: var(--whitish);
-  padding: 2em 0;
-}
-
 /* Typography */
 
 h1 {
@@ -34,6 +28,14 @@ h1 {
   font-size: 0.75rem;
   margin: 0;
   text-transform: uppercase;
+}
+
+/* Layout */
+
+header {
+  text-align: center;
+  background-color: var(--whitish);
+  padding: 2em 0;
 }
 
 /* Navigation */
@@ -67,13 +69,6 @@ nav a:focus {
 }
 
 .current-page:hover,
-.curent-page:focus {
+.current-page:focus {
   color: var(--grey);
-}
-
-/* Layout */
-
-header {
-  display: flex;
-  flex-direction: column;
 }
