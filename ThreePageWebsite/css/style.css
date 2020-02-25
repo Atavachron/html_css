@@ -33,9 +33,19 @@ h1 {
 /* Layout */
 
 header {
-  text-align: center;
   background-color: var(--whitish);
   padding: 2em 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Navigation */
@@ -48,7 +58,7 @@ nav ul {
 }
 
 nav li {
-  margin: 0 1em;
+  margin-left: 2em;
 }
 
 nav a {
