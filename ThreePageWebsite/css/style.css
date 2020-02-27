@@ -27,6 +27,7 @@ h3 {
   font-family: "Lora", serif;
   font-weight: 400;
   color: var(--darkblue);
+  margin-top: 0;
 }
 
 h1 {
@@ -77,11 +78,16 @@ a:focus {
   text-decoration: underline;
 }
 
+.article-info {
+  margin: 2em 0;
+}
+
 /* Layout */
 
 header {
   background-color: var(--whitish);
   padding: 2em 0;
+  text-align: center;
 }
 
 .container {
@@ -93,21 +99,26 @@ header {
 .container-flex {
   display: flex;
   justify-content: space-between;
-}
-
-@media (max-width: 675px) {
-  .container-flex {
-    flex-direction: column;
-  }
-
-  header {
-    text-align: center;
-  }
+  flex-direction: column;
 }
 
 footer {
   background-color: var(--darkblue);
   text-align: center;
+}
+
+@media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
+  }
+
+  main {
+    width: 75%;
+  }
+
+  aside {
+    width: 20%;
+  }
 }
 
 /* Navigation */
@@ -153,4 +164,26 @@ nav a:focus {
   nav li {
     margin: 0.5em 0;
   }
+}
+
+/* Articles */
+
+.article-featured {
+  border-bottom: 1px solid var(--grey);
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.article-recent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.article-recent-main {
+  order: 2;
+}
+
+.article-recent-secondary {
+  order: 1;
 }
