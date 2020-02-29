@@ -17,7 +17,14 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+}
+
+.image-full {
   width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 2em;
 }
 
 /* Typography */
@@ -40,7 +47,8 @@ h2 {
   font-size: 1.5rem;
 }
 
-a {
+a,
+h3 {
   color: var(--lightblue);
 }
 
@@ -86,6 +94,7 @@ a:focus {
 .widget-title,
 .widget-recent-post-title {
   font-size: 1rem;
+  color: var(--darkblue);
 }
 
 .widget-title {
@@ -135,6 +144,10 @@ footer {
     width: 25%;
     min-width: 200px;
     margin-left: 1em;
+  }
+
+  header {
+    text-align: left;
   }
 }
 
