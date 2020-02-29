@@ -6,6 +6,7 @@
   --lightblue: #1792d2;
   --darkblue: #143774;
   --lightgrey: #efefef;
+  --mediumblue: #345480;
 }
 
 body {
@@ -129,8 +130,8 @@ header {
 }
 
 footer {
-  background-color: var(--darkblue);
-  color: white;
+  background-color: var(--mediumblue);
+  color: rgba(255, 255, 255, 0.65);
   text-align: center;
   padding: 3em 0;
 }
