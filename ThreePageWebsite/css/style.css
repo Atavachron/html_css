@@ -83,6 +83,17 @@ a:focus {
   margin: 2em 0;
 }
 
+.widget-title,
+.widget-recent-post-title {
+  font-size: 1rem;
+}
+
+.widget-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 /* Layout */
 
 header {
@@ -106,7 +117,9 @@ header {
 
 footer {
   background-color: var(--darkblue);
+  color: white;
   text-align: center;
+  padding: 3em 0;
 }
 
 @media (min-width: 675px) {
@@ -233,4 +246,20 @@ nav a:focus {
   border: 20px solid var(--lightgrey);
   margin-bottom: 2em;
   padding: 1em;
+}
+
+.widget-recent-post {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--grey);
+  margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.widget-image {
+  order: -1;
 }
