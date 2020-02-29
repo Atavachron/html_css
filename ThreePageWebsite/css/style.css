@@ -206,6 +206,9 @@ nav a:focus {
   }
   .article-image {
     order: -2;
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
   }
   .article-info {
     order: -1;
