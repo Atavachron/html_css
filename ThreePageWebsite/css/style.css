@@ -88,6 +88,7 @@ header {
   background-color: var(--whitish);
   padding: 2em 0;
   text-align: center;
+  margin-bottom: 2.5em;
 }
 
 .container {
@@ -186,4 +187,27 @@ nav a:focus {
 
 .article-recent-secondary {
   order: 1;
+}
+
+@media (min-width: 675px) {
+  .article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .article-recent-main {
+    width: 67%;
+  }
+  .article-recent-secondary {
+    width: 30%;
+  }
+  .article-featured {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-image {
+    order: -2;
+  }
+  .article-info {
+    order: -1;
+  }
 }
