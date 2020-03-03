@@ -59,21 +59,29 @@ strong {
 /* Header */
 
 header {
-  display: flex;
-  flex-direction: column;
   background-color: #404040;
   background-image: url(../images/dark-ribs.jpg);
   background-size: cover;
   background-position: center;
   padding: 0 0.5em 2em;
-  justify-content: space-between;
-  min-height: 50vh;
 }
 
 /* Main */
 
 main {
   padding: 2em 1em;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
 }
 
 /* Media queries */
@@ -92,7 +100,7 @@ main {
     font-size: 1.75rem;
   }
 
-  .container {
+  .site-container {
     display: flex;
   }
 
@@ -105,5 +113,9 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .container-header {
+    height: 100%;
   }
 }
