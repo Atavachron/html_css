@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #404040;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+h1 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1.3125rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.3125rem;
+}
+
+.fine-print {
+  font-size: 0.625rem;
+}
+
+strong {
+  font-weight: 900;
+}
