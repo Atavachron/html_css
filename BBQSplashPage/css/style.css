@@ -84,6 +84,28 @@ main {
   min-height: 50vh;
 }
 
+/* Form */
+
+.email-collector {
+  width: 80%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+input,
+.btn {
+  width: 100%;
+  border-radius: 5px;
+}
+
+input {
+  margin-bottom: 0.75em;
+  font-family: inherit;
+  text-align: inherit;
+  padding: 0.25em;
+  border: 1px solid #404040;
+}
+
 /* Media queries */
 
 @media (min-width: 500px) {
