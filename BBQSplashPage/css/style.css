@@ -104,6 +104,34 @@ input {
   text-align: inherit;
   padding: 0.25em;
   border: 1px solid #404040;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+
+input:focus {
+  transform: scale(1.1);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 1.5em;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 0;
+}
+
+.btn-primary {
+  background: linear-gradient(to left, #ff713b, #ffa51d);
+  color: white;
+  transition: transform 0.25s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: scale(1.1);
 }
 
 /* Media queries */
