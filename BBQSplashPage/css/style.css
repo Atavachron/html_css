@@ -68,7 +68,8 @@ strong {
 
 header {
   background-color: #404040;
-  background-image: url(../images/dark-ribs.jpg);
+  background-image: url(../images/ribs.jpg);
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
   padding: 0 0.5em 2em;
