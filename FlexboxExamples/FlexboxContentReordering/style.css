@@ -26,7 +26,34 @@ a:hover {
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 50px;
+}
+
+input {
+  padding: 10px;
+  border: 0;
+  font-family: inherit;
+}
+
+section,
+footer,
+header {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  padding: 20px;
+  color: white;
+}
+
+.toggleNav {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  margin: 0.3em;
 }
 
 .flex-nav ul {
@@ -60,8 +87,45 @@ a:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 522px) {
   .flex-nav li {
     flex-basis: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper > * {
+    order: 999;
+  }
+
+  .flex-nav {
+    order: 1;
+  }
+
+  .top {
+    order: 2;
+  }
+
+  .details {
+    order: 3;
+  }
+
+  .signup {
+    order: 4;
+  }
+
+  .toggleNav {
+    display: block;
+  }
+
+  .flex-nav ul {
+    display: none;
+  }
+
+  .flex-nav ul.open {
+    display: flex;
   }
 }
