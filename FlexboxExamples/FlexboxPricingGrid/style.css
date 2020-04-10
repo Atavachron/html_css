@@ -52,3 +52,25 @@ a {
   font-size: 3em;
   margin: 10px 0;
 }
+
+/* Flexbox Styles */
+
+.pricing-grid {
+  display: flex;
+  align-items: center;
+}
+
+.plan {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 4px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan a {
+  margin-top: auto;
+}
