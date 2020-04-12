@@ -37,6 +37,12 @@ input[type="submit"] {
   color: white;
 }
 
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button {
+  display: none;
+  margin: 0;
+}
+
 .clouds {
   position: fixed;
   top: -50px;
