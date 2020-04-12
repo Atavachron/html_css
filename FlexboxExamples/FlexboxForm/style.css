@@ -5,5 +5,60 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.cover {
   height: 100vh;
+  width: 100vw;
+}
+
+.flex-form > * {
+  border: 0;
+  padding: 10px;
+  background: white;
+  line-height: 50px;
+  font-size: 20px;
+  outline: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.flex-form > *:last-child {
+  border-right: none;
+}
+
+input,
+select {
+  font-family: inherit;
+}
+
+input[type="submit"] {
+  background-color: red;
+  color: white;
+}
+
+.clouds {
+  position: fixed;
+  top: -50px;
+  left: 0;
+  min-width: 100%;
+  z-index: -1;
+}
+
+/* Flexbox */
+
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-form {
+  display: flex;
+  border: 20px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+input[type="search"] {
+  flex-basis: 340px;
 }
