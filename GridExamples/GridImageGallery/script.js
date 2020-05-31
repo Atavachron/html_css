@@ -18,6 +18,16 @@ function generateRandomNumber(limit) {
   return Math.floor(Math.random() * limit) + 1;
 }
 
+function handleClick(e) {
+  const src = e.currentTarget.querySelector('img').src;
+  overlayImage.src = src;
+  overlay.classList.add('open');
+}
+
+function close() {
+  overlay.classList.remove('open');
+}
+
 const digits = Array.from({ length: 50 }, () => [
   generateRandomNumber(4),
   generateRandomNumber(4),
@@ -43,3 +53,9 @@ const digits = Array.from({ length: 50 }, () => [
 
 const html = digits.map(generateHTML).join('');
 gallery.innerHTML = html;
+
+const items = document.querySelectorAll('.item');
+
+items.forEach((item) => item.addEventListener('click', handleClick));
+
+overlayClose.addEventListener('click', close);
