@@ -21,6 +21,24 @@ function generateRandomNumber(limit) {
 const digits = Array.from({ length: 50 }, () => [
   generateRandomNumber(4),
   generateRandomNumber(4),
+]).concat([
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
+  [1, 1],
 ]);
 
 const html = digits.map(generateHTML).join('');
